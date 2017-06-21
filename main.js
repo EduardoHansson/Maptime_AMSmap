@@ -316,27 +316,7 @@ var style_object = {
         "fill-outline-color": "#c9c8c4"
       }
     },
-    {
-      "id": "gebouwen",
-      "type": "fill",
-      "source": "wm_vector",
-      "source-layer": "gebouwen",
-      "maxzoom": 21,
-      "minzoom": 0,
-      "paint": {
-        "fill-color" : "#00111a",
-        "fill-outline-color": {
-          "type": "interval",
-          "stops": [
-            [0, "rgba(0,0,0,0)"],
-            [12, "rgba(0,0,0,0)"],
-            [13, "rgba(0,0,0,0)"],
-            [14,"#C9C7C2"],
-            [15,"#C9C7C2" ]
-          ]
-        }
-      }
-    },
+  
     { 
       "id": "gebouwen_overdekt",
       "type": "fill",
@@ -2748,6 +2728,29 @@ var style_object = {
             [17,8]
           ]
         }
+      }
+    },
+        {
+      "id": "gebouwen",
+      "type": "fill-extrusion",
+      "source": "wm_vector",
+      "source-layer": "gebouwen",
+      "maxzoom": 21,
+      "minzoom": 0,
+      "paint": {
+        "fill-extrusion-color" : "#cc0000",
+        "fill-extrusion-height": 100,
+          "fill-extrusion-opacity": 0.7
+//        "fill-outline-color": {
+//          "type": "interval",
+//          "stops": [
+//            [0, "rgba(0,0,0,0)"],
+//            [12, "rgba(0,0,0,0)"],
+//            [13, "rgba(0,0,0,0)"],
+//            [14,"#C9C7C2"],
+//            [15,"#C9C7C2" ]
+//          ]
+//        }
       }
     },
       
